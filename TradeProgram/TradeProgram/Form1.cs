@@ -13,18 +13,24 @@ namespace TradeProgram
     
     public partial class Form1 : Form
     {
-        HistoricalDataInfo s;
         public Form1()
         {
             InitializeComponent();
-            s = new HistoricalDataInfo();
 
-            textBox1.Text = s.force.ToString();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HistoricalDataInfo HS = new HistoricalDataInfo();
+            HS.Connect();
+            textBox1.Text = HS.force;
+
         }
     }
 }

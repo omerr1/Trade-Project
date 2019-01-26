@@ -10,7 +10,7 @@ namespace TradeProgram
     class HistoricalDataInfo
     {
         public string force;
-        void stocks()
+        public void Connect()
         {
             var symbol = "msft";
             var IEXTrading_API_PATH = "https://api.iextrading.com/1.0/stock/{0}/chart/1y";
