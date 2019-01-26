@@ -1,2 +1,2 @@
 # Trade-Project
-A trade application
+A trade application.
